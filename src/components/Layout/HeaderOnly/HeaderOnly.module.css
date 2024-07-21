@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    margin-top: 60px; /* Để phần content không bị che bởi header */
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    min-height: calc(100vh - 60px); /* Chiều cao nội dung bằng chiều cao viewport trừ đi chiều cao của header */
+    box-sizing: border-box;
+}

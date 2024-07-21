@@ -1,0 +1,26 @@
+@import 'normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Patua+One&display=swap');
+
+:root {
+    --primary-color: #ff3b5c;
+    --black-color: #000111;
+    --grey-black: #2f2f2f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}

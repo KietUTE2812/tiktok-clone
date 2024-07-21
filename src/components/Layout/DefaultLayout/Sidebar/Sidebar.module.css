@@ -1,0 +1,58 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--black-color);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-top: #835f5f 0.5px solid;
+
+    .groupButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-bottom: #835f5f 0.5px solid;
+        .btnSidebar {
+            background-color: var(--black-color);
+            border: none;
+            color: #ffffff;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            #avatar {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin: 10px 20px;
+                font-style: bold;
+            }
+            #icon {
+                width: 30px;
+                height: 30px;
+                margin: 10px 20px;
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(2) contrast(1);
+            }
+        }
+        .btnSidebar:hover {
+            background-color: var(--grey-black);
+            border-left: 5px solid var(--primary);
+        }
+    }
+}
+.active {
+    color: #ff3b5c !important;
+    #icon {
+        filter: brightness(0) saturate(100%) invert(35%) sepia(77%) saturate(2743%) hue-rotate(328deg) brightness(100%)
+            contrast(102%) !important;
+    }
+}
