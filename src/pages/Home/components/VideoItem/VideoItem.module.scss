@@ -1,0 +1,87 @@
+.container {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.wrapperVideo {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+
+    .video {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+    }
+}
+.iconDetail {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    transition: opacity 0.3s ease 0s;
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0) 0%, rgba(12, 12, 12, 0.2) 100%);
+    width: 100%;
+    height: 10%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+}
+.wrapperInfo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    background: linear-gradient(rgba(18, 18, 18, 0) 0%, rgba(12, 12, 12, 0.5) 30%, rgba(12, 12, 12, 0.9) 100%);
+    transition-duration: 0.3s;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    pointer-events: none;
+    .ownVideo {
+        color: white;
+    }
+    .title {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
+}
+
+.wrappperAction {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    .avatarActionContainer {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .buttonFollow {
+            position: absolute;
+            bottom: -10%;
+            background-color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: #fff solid 1.5px;
+        }
+    }
+}

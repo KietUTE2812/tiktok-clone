@@ -4,7 +4,7 @@ import styles from './DefaultLayout.module.css';
 
 function DefaultLayout({ children }) {
     return (
-        <div>
+        <div className={styles.wrapperWeb}>
             <Header />
             <div className={styles.container}>
                 <Sidebar />

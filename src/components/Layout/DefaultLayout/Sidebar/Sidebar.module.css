@@ -1,9 +1,8 @@
 .sidebar {
     width: 250px;
     height: 100vh;
-    background-color: var(--black-color);
     position: fixed;
-    top: 60px;
+    background-color: var(--black-color);
     left: 0;
     z-index: 100;
     transition: all 0.3s;
@@ -13,7 +12,6 @@
     padding-top: 10px;
     padding-left: 10px;
     border-top: #835f5f 0.5px solid;
-
     .groupButton {
         display: flex;
         flex-direction: column;
@@ -29,6 +27,7 @@
             align-items: center;
             justify-content: flex-start;
             width: 100%;
+            text-decoration: none;
             #avatar {
                 width: 30px;
                 height: 30px;
@@ -46,6 +45,7 @@
         .btnSidebar:hover {
             background-color: var(--grey-black);
             border-left: 5px solid var(--primary);
+            cursor: pointer;
         }
     }
 }

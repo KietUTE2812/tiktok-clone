@@ -7,6 +7,7 @@
     background-color: #000111;
     position: fixed;
     top: 0px;
+    z-index: 3000;
 }
 .groupLogo {
     display: flex;
@@ -26,6 +27,7 @@
 }
 .groupSearch {
     display: flex;
+    position: relative;
     height: 40px;
     width: 400px;
     border-radius: 25px;
@@ -39,7 +41,6 @@
         border-bottom-left-radius: 25px;
         border: none;
     }
-
     .btnSearch {
         background-color: #2f2f2f;
         padding-right: 10px;
@@ -127,4 +128,12 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+.searchResult {
+    width: 400px;
+}
+.noticeResult {
+    position: absolute;
+    right: -100px;
+    width: 300px;
 }

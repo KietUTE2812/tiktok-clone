@@ -1,0 +1,16 @@
+.wrapper {
+    width: 100%;
+    min-width: 223px;
+    max-height: min((100vh - 36px), 734px);
+    min-height: 100px;
+    background-color: #fff;
+    box-shadow: #000 0 0 10px;
+    border-radius: 8px;
+    margin-top: -23px;
+    padding-top: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    h4 {
+        color: #7e7777;
+    }
+}

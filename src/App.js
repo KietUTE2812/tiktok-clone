@@ -12,12 +12,16 @@ function App() {
           {
             publicRoutes.map((route, index) => {
               let Layout = route.layout;
+
               if (Layout === null)
                 Layout = Fragment;
               else if (Layout === undefined) Layout = DefaultLayout;
 
               return (
-                <Route key={index} path={route.path} element={<Layout><route.component /></Layout>} />)
+                <Route key={index} path={route.path} element={<Layout><route.component
+                  props={route.props === undefined ? {} : route.props}
+                  videos={route.videos} />
+                </Layout>} />)
             })
           }
           <Route path="*" element={<DefaultLayout><Home /></DefaultLayout>} />

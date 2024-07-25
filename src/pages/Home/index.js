@@ -1,6 +1,12 @@
-function Home() {
+import WrapperVideos from './components/WrapperVideos';
+import VideoItem from './components/VideoItem';
+function Home({ videos }) {
     return (
-        <h2>Home Page</h2>
+        <WrapperVideos>
+            {videos.map((video) => (
+                <VideoItem key={video.id} video={video} />
+            ))}
+        </WrapperVideos>
     );
 }
 
