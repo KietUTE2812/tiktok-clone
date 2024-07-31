@@ -25,43 +25,6 @@
     margin-left: 10px;
     text-decoration: none;
 }
-.groupSearch {
-    display: flex;
-    position: relative;
-    height: 40px;
-    width: 400px;
-    border-radius: 25px;
-    .inputSearch {
-        background-color: #2f2f2f;
-        color: white;
-        width: 100%;
-        padding: 0 20px;
-        font-size: 16px;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border: none;
-    }
-    .btnSearch {
-        background-color: #2f2f2f;
-        padding-right: 10px;
-        border: none;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
-        img {
-            opacity: 0.5;
-            width: 30px;
-            height: 30px;
-        }
-    }
-}
-.groupSearch:hover {
-    background-color: #000111;
-    border: white 1px solid;
-
-    img {
-        opacity: 1;
-    }
-}
 .upload {
     display: flex;
     align-items: center;
@@ -128,9 +91,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-}
-.searchResult {
-    width: 400px;
 }
 .noticeResult {
     position: absolute;
